@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex_1</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      color: #434343;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    html {
+      width: 100%;
+      height: 100%;
+    }
+    body {
+      width: 100%;
+      height: 100%;
+      background-color: #faf3e7;
+    }
+    #container {
+      margin: 0 auto;
+      width: 90%;
+      height: 100%;
+      background-color: #ffefd5;
+    }
+    .header {
+      width: 100%;
+      height: 6%;
+      background-color: rgba(255, 159, 148, 0.651);
+      display: flex;
+      /* 水平轴对齐方式 */
+      justify-content: center;
+      /* 交叉轴对齐方式 */
+      align-items: center;
+    }
+    .main {
+      width: 100%;
+      height: 88%;
+      background-color: #fdedce;
+      text-indent: 2em;
+      line-height: 2em;
+    }
+    .footer {
+      width: 100%;
+      height: 6%;
+      background-color: #cdfdf0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+    }
+  </style>
+  <body>
+    <div id="container">
+      <div class="header">Lorem.</div>
+      <div class="main">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde alias
+        numquam ratione dolor rem magni dignissimos id facilis molestiae ex
+        saepe eum voluptatem, exercitationem odio. Natus ipsam quod pariatur
+        nostrum.
+        <div onclick="console.log('div')">
+          <p onclick="console.log('p')">Click here!</p>
+        </div>
+        <details>
+          <summary>查看全部</summary>
+          <ul>
+            <li>Lorem.</li>
+            <li>Lorem.</li>
+            <li>Quis</li>
+          </ul>
+        </details>
+      </div>
+      <div class="footer">Lorem, ipsum dolor.</div>
+    </div>
+  </body>
+</html>
